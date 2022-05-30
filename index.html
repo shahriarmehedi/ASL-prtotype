@@ -9,17 +9,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script src="/js/index.js"></script>
     <link rel="stylesheet" href="/css/megamenu.css" />
+    <script src="/js/sidenav.js"></script>
+    <link rel="stylesheet" href="/css/sidenav.css" />
     <title>Prototype</title>
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav text-sm font-bold">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/category.html">Brands</a>
+        <hr>
+        <a href="/category.html">Men</a>
+        <hr>
+        <a href="/category.html">Women</a>
+        <hr>
+        <a href="/category.html">Kids</a>
+        <hr>
+        <a href="/category.html">Offers</a>
+        <hr>
+        <a href="/category.html">Rongmishal</a>
+        <hr>
+    </div>
     <nav>
         <!-- Create a navbar-->
         <div class="w-full mx-auto bg-[#F3F3F3] px-20">
             <div class="flex justify-between items-center h-[60px]">
                 <div class="flex">
-                    <div class="relative top-1">
+                    <div onclick="openNav()" class="relative top-1">
                         <i class="bi bi-list text-2xl cursor-pointer"></i>
+
                     </div>
                     <div class="flex items-center px-2">
                         <a href="index.html">
@@ -48,7 +66,7 @@
                 <img class="h-20" src="/img/Rongmishal_logo.png" alt="">
             </div>
             <div>
-                <i class="bi bi-heart text-rose-500 px-2"></i>
+                <a href="/favorite.html"> <i class="bi bi-heart text-rose-500 px-2"></i> </a>
                 <span class="text-gray-300">|</span>
                 <a href="/cart.html">
                     <i class="bi bi-bag text-rose-500 px-2"></i>
@@ -812,29 +830,27 @@
     </section>
 
     <section class="w-5/6 mx-auto pt-5">
-        <div class="flex">
-            <div class="px-10 py-5 w-[200px] bg-gray-900 mx-5">
+        <div class="flex flex-col lg:flex-row">
+            <div class="px-10 py-5 mb-3 mx-auto w-5/6 lg:w-[200px] bg-gray-900 mx-5 cursor-pointer">
                 <h2 class="text-white">SUPER DEALS</h2>
             </div>
-            <div class="px-10 py-5 w-[200px] bg-gray-900 mx-5">
+            <div class="px-10 py-5 mb-3 mx-auto w-5/6 lg:w-[200px] bg-gray-900 mx-5 cursor-pointer">
                 <h2 class="text-white">SUPER DEALS</h2>
             </div>
-            <div class="px-10 py-5 w-[200px] bg-gray-900 mx-5">
+            <div class="px-10 py-5 mb-3 mx-auto w-5/6 lg:w-[200px] bg-gray-900 mx-5 cursor-pointer">
                 <h2 class="text-white">SUPER DEALS</h2>
             </div>
-            <div class="px-10 py-5 w-[200px] bg-gray-900 mx-5">
+            <div class="px-10 py-5 mb-3 mx-auto w-5/6 lg:w-[200px] bg-gray-900 mx-5 cursor-pointer">
                 <h2 class="text-white">SUPER DEALS</h2>
             </div>
-            <div class="px-10 py-5 w-[200px] bg-gray-900 mx-5">
+            <div class="px-10 py-5 mb-3 mx-auto w-5/6 lg:w-[200px] bg-gray-900 mx-5 cursor-pointer">
                 <h2 class="text-white">SUPER DEALS</h2>
             </div>
         </div>
     </section>
 
     <section>
-        <img class="my-10"
-            src="https://logan.nnnow.com/content/dam/nnnow-project/10-feb-2022/SephoraBrandoftheweektext3310x240.jpg"
-            alt="" />
+        <img class="my-10" src="/img/1.png" alt="" />
         <img class="w-5/6 mx-auto"
             src="https://logan.nnnow.com/content/dam/nnnow-project/24-may-2022/se/Bobbibrown_Brandoftheweekstripdesktop.jpg"
             alt="" />
@@ -866,26 +882,21 @@
     </section>
 
     <section>
-        <img class="mt-10" src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/ju
-      <!-- SECTION HERE -->
+        <img class="mt-10" src="/img/2.png" alt="" />
+        <!-- SECTION HERE -->
     </section>
 
-    <section>
-      <img
-        class=" mt-10" src="https://logan.nnnow.com/content/dam/nnnow-project/22-march-2022/Loyalty_Strip_Desk.jpg"
-            alt="" />
-    </section>
+
 
     <section>
-        <img class="mt-10" src="https://logan.nnnow.com/content/dam/nnnow-project/22-march-2022/Loyalty_Strip_Desk.jpg"
-            alt="" />
+
         <img class="mt-5"
             src="https://logan.nnnow.com/content/dam/nnnow-project/13-april-2022/se/Sephora_HeaderStrip_ItsGettingHotInHeretext3310x240.jpg"
             alt="" />
     </section>
 
     <section class="w-5/6 mx-auto">
-        <div class="flex">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <img class="w-[350px] mr-3"
                 src="https://logan.nnnow.com/content/dam/nnnow-project/19-may-2022/se/Sephora_ContentP-story_LinerLovin_.jpg"
                 alt="" />
@@ -903,7 +914,7 @@
     </section>
 
     <section class="w-5/6 mx-auto">
-        <div class="flex">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <div class="flex flex-col text-center w-[300px] px-5">
                 <img class="h-[300px] w-[200px] mx-auto"
                     src="https://cdn16.nnnow.com/web-images/medium/styles/VEM6M3SJB3F/1492757966983/1.jpg" alt="" />
@@ -955,7 +966,7 @@
         <img class="my-7"
             src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_4_DESK.jpg"
             alt="" />
-        <div class="w-5/6 mx-auto flex">
+        <div class="w-5/6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-5">
             <img class="w-[200px] h-[75px] px-2"
                 src="https://logan.nnnow.com/content/dam/nnnow-project/17-jan-2020/logo-dsk/scdsk.jpeg" alt="" />
             <img class="w-[200px] h-[75px] px-2"
@@ -976,7 +987,7 @@
             src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_5_DESK.jpg"
             alt="" />
         <div>
-            <div class="w-5/6 flex mx-auto">
+            <div class="w-5/6 flex flex-col lg:flex-row mx-auto">
                 <img class="w-[388px] h-[237px] p-2"
                     src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_BigByDefinitionMascara.jpg"
                     alt="" />
@@ -986,7 +997,7 @@
                 <img class="w-[388px] h-[237px] p-2"
                     src="https://logan.nnnow.com/content/dam/nnnow-project/23-may-2022/OUAI_NOTB.jpg" alt="" />
             </div>
-            <div class="w-5/6 flex mx-auto">
+            <div class="w-5/6 flex flex-col lg:flex-row mx-auto">
                 <img class="w-[388px] h-[237px] p-2"
                     src="https://logan.nnnow.com/content/dam/nnnow-project/18-april-2022/se/HudaBeauty_NOTB_GLOWISHrange.jpg"
                     alt="" />
@@ -1001,9 +1012,8 @@
     </section>
 
     <section>
-        <img src="https://logan.nnnow.com/content/dam/nnnow-project/01-oct-2020/sephora/2OCT20_PREHEADER_7_DESK.jpg"
-            alt="" />
-        <div class="grid grid-cols-3 w-5/6 mx-auto gap-2">
+        <img src="/img/3.png" alt="" />
+        <div class="grid grid-cols-1 lg:grid-cols-3 w-5/6 mx-auto gap-2">
             <div class="p-3">
                 <img class="w-[300px]"
                     src="https://logan.nnnow.com/content/dam/nnnow-project/23-march-2022/se-blog/Sephora_MakingaLook_BlogCoverTileOption02.jpg"
