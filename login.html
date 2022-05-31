@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="mySidenav" class="sidenav text-sm font-bold">
+    <div id="mySidenav" class="sidenav text-sm font-bold z-50">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/category.html">Brands</a>
         <hr>
@@ -32,20 +32,19 @@
     </div>
     <nav>
         <!-- Create a navbar-->
-        <div class="w-full mx-auto bg-[#F3F3F3] px-20">
+        <div class="w-full fixed z-40 mx-auto bg-[#F3F3F3] px-10 lg:px-20">
             <div class="flex justify-between items-center h-[60px]">
                 <div class="flex">
-                    <div onclick="openNav()" class="relative top-1">
+                    <div onclick="openNav()" class="relative top-3">
                         <i class="bi bi-list text-2xl cursor-pointer"></i>
-
                     </div>
                     <div class="flex items-center px-2">
                         <a href="index.html">
-                            <img src="/img/Rongmishal_logo.png" alt="logo" class="h-10 px-3" />
+                            <img src="/img/Rongmishal_logo.png" alt="logo" class="h-14 px-3 py-2" />
                         </a>
                     </div>
                 </div>
-                <div class="flex items-center">
+                <div class="hidden lg:flex items-center">
                     <a href="/index.html" class="text-gray-500 hover:text-gray-700 mr-4">Home</a>
                     <a href="/shop.html" class="text-gray-500 hover:text-gray-700 mr-4">Shop</a>
                     <a href="/category.html" class="text-gray-500 hover:text-gray-700 mr-4">Category</a>
@@ -56,8 +55,8 @@
             </div>
         </div>
     </nav>
-    <section class="w-11/12 mx-auto pt-5">
-        <div class="flex justify-between items-center">
+    <section class="w-11/12 mx-auto pt-20">
+        <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center">
                 <i class="bi bi-search mx-2 text-rose-400"></i>
                 <input placeholder="Search here" class="outline-none border-b-2" type="text" />
@@ -65,7 +64,7 @@
             <div>
                 <img class="h-20" src="/img/Rongmishal_logo.png" alt="">
             </div>
-            <div>
+            <div class="py-3">
                 <a href="/favorite.html"> <i class="bi bi-heart text-rose-500 px-2"></i> </a>
                 <span class="text-gray-300">|</span>
                 <a href="/cart.html">
@@ -84,7 +83,7 @@
 
 
         <nav class="relative bg-white border-b-2 border-gray-300 text-gray-900">
-            <div class="flex w-5/6 mx-auto">
+            <div class="hidden md:flex  w-5/6 mx-auto">
 
                 <ul class="flex mx-auto">
 
@@ -823,7 +822,7 @@
     <!-- COMMON SECTION END -->
 
 
-    <section class="w-1/3 mx-auto bg-gray-100 px-14 pb-20 mb-20">
+    <section class="w-11/12 md:w-2/3 lg:w-1/3 mx-auto bg-gray-100 px-2 pb-20 mb-20">
         <div class="mt-10">
             <h2 class="font-bold text-xl text-center py-7">LOGIN</h2>
         </div>
@@ -841,22 +840,60 @@
             <div>
                 <div
                     class="w-full bg-[#4585F4] cursor-pointer text-white text-center font-bold py-3 my-2 flex items-center">
-                    <img class="h-7 px-10" src="https://static.nnnow.com/google-social-login.svg" alt="">
-                    <h4 class="text-center">Continue with Google</h4>
+                    <img class="h-7 px-5 lg:px-10" src="https://static.nnnow.com/google-social-login.svg" alt="">
+                    <h4 class="text-center text-sm md:text-normal">Continue with Google</h4>
                 </div>
                 <div
                     class="w-full bg-[#3B5998] cursor-pointer text-white text-center font-bold py-3 my-2 flex items-center">
-                    <img class="h-7 px-10" src="/img/fb.jpg" alt="">
-                    <h4 class="text-center">Continue with Facebook</h4>
+                    <img class="h-7 px-5 lg:px-10" src="/img/fb.jpg" alt="">
+                    <h4 class="text-center text-sm md:text-normal">Continue with Facebook</h4>
                 </div>
                 <div
                     class="w-full bg-[#BD3998] cursor-pointer text-white text-center font-bold py-3 my-2 flex items-center">
-                    <img class="h-7 px-10" src="https://thumbs.dreamstime.com/b/print-204010516.jpg" alt="">
-                    <h4 class="text-center">Continue with Instagram</h4>
+                    <img class="h-7 px-5 lg:px-10" src="https://thumbs.dreamstime.com/b/print-204010516.jpg" alt="">
+                    <h4 class="text-center text-sm md:text-normal">Continue with Instagram</h4>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- COMMON FOOTER START -->
+
+    <section class="flex justify-center items-center mt-5">
+        <button class="px-10 py-4 bg-[#ABC72C]">
+            <span><i class="bi bi-arrow-up-short"></i></span> Back to top
+        </button>
+    </section>
+
+    <section>
+        <div class="mt-10 bg-[#F2F2F2]">
+            <h4 class="text-2xl font-bold text-center pt-5">
+                GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION
+            </h4>
+            <div class="flex flex-col md:flex-row justify-center items-center pt-5 pb-5">
+                <input class="w-5/6 lg:w-1/2 py-3 px-2 outline-none mx-auto" type="text"
+                    placeholder="Enter you email address" />
+                <button class="bg-gray-900 px-7 py-3 text-white my-2 md:my-0 rounded">SUBSCRIBE</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-10">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <h4 class="font-bold px-7">WHO WE ARE</h4>
+            <h4 class="font-bold px-7">FREQUENTLY ASKED QUESTIONS</h4>
+            <h4 class="font-bold px-7">CONTACT US</h4>
+        </div>
+        <div class="flex justify-center items-center pt-10">
+            <i class="bi bi-facebook text-2xl text-gray-700 hover:text-rose-400 px-4 cursor-pointer"></i>
+            <i class="bi bi-instagram text-2xl text-gray-700 hover:text-rose-400 px-4 cursor-pointer"></i>
+            <i class="bi bi-twitter text-2xl text-gray-700 hover:text-rose-400 px-4 cursor-pointer"></i>
+            <i class="bi bi-youtube text-2xl text-gray-700 hover:text-rose-400 px-4 cursor-pointer"></i>
+        </div>
+        <div class="my-10 text-sm text-center">
+            <h3>© 2022 ASL | Privacy Policy | Terms & Conditions</h3>
+        </div>
+    </footer>
 
 
 </body>

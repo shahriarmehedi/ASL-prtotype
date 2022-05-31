@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div id="mySidenav" class="sidenav text-sm font-bold">
+  <div id="mySidenav" class="sidenav text-sm font-bold z-50">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="/category.html">Brands</a>
     <hr>
@@ -31,20 +31,20 @@
   </div>
   <nav>
     <!-- Create a navbar-->
-    <div class="w-full mx-auto bg-[#F3F3F3] px-20">
+    <div class="w-full fixed z-40 mx-auto bg-[#F3F3F3] px-10 lg:px-20">
       <div class="flex justify-between items-center h-[60px]">
         <div class="flex">
-          <div onclick="openNav()" class="relative top-1">
+          <div onclick="openNav()" class="relative top-3">
             <i class="bi bi-list text-2xl cursor-pointer"></i>
 
           </div>
           <div class="flex items-center px-2">
             <a href="index.html">
-              <img src="/img/Rongmishal_logo.png" alt="logo" class="h-10 px-3" />
+              <img src="/img/Rongmishal_logo.png" alt="logo" class="h-14 px-3 py-2" />
             </a>
           </div>
         </div>
-        <div class="flex items-center">
+        <div class="hidden lg:flex items-center">
           <a href="/index.html" class="text-gray-500 hover:text-gray-700 mr-4">Home</a>
           <a href="/shop.html" class="text-gray-500 hover:text-gray-700 mr-4">Shop</a>
           <a href="/category.html" class="text-gray-500 hover:text-gray-700 mr-4">Category</a>
@@ -55,8 +55,8 @@
       </div>
     </div>
   </nav>
-  <section class="w-11/12 mx-auto pt-5">
-    <div class="flex justify-between items-center">
+  <section class="w-11/12 mx-auto pt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="flex items-center">
         <i class="bi bi-search mx-2 text-rose-400"></i>
         <input placeholder="Search here" class="outline-none border-b-2" type="text" />
@@ -64,7 +64,7 @@
       <div>
         <img class="h-20" src="/img/Rongmishal_logo.png" alt="">
       </div>
-      <div>
+      <div class="py-3">
         <a href="/favorite.html"> <i class="bi bi-heart text-rose-500 px-2"></i> </a>
         <span class="text-gray-300">|</span>
         <a href="/cart.html">
@@ -83,7 +83,7 @@
 
 
     <nav class="relative bg-white border-b-2 border-gray-300 text-gray-900">
-      <div class="flex w-5/6 mx-auto">
+      <div class="hidden md:flex  w-5/6 mx-auto">
 
         <ul class="flex mx-auto">
 
@@ -801,8 +801,8 @@
   </section>
 
   <section class="w-11/12 mx-auto pt-7">
-    <div class="flex">
-      <div class="w-[25%]">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-5/6 lg:w-[25%] mx-auto text-center lg:text-left">
         <h3 class="font-bold">SHOP</h3>
         <h4 class="py-2">FACE</h4>
         <h4 class="py-2">CHEEK</h4>
@@ -814,46 +814,46 @@
         <h4 class="py-2">MAKEUP PALETTES</h4>
         <h4 class="py-2">VEGAN</h4>
       </div>
-      <div class="w-[75%]">
+      <div class="w-5/6 lg:w-[75%] mx-auto">
         <img
           src="https://logan.nnnow.com/content/dam/nnnow-project/16-april-2020/makeup/13APR20_MAKEUP_CB_STRIP1_DESK_1.jpg"
           alt="">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
@@ -867,41 +867,41 @@
           alt="">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
@@ -914,41 +914,41 @@
           alt="">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
@@ -961,41 +961,41 @@
           alt="">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10">
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
             <h2 class="font-bold">Rs. 2,070</h2>
           </div>
-          <div class="flex flex-col text-center w-[200px] px-5">
-            <img class="h-[150px] w-[100px] mx-auto"
-              src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg" alt="" />
+          <div class="flex flex-col text-center px-5">
+            <img class=" mx-auto" src="https://cdn11.nnnow.com/web-images/medium/styles/8V1ZDUHUDR0/1533201155000/1.jpg"
+              alt="" />
             <h3 class="font-bold text-red-500">OFFER</h3>
             <h3 class="font-bold">STILA</h3>
             <h4 class="text-gray-600">Convertible colour</h4>
@@ -1006,26 +1006,29 @@
     </div>
   </section>
 
-  <section class="flex justify-center items-center pt-20">
+  <!-- COMMON FOOTER START -->
+
+  <section class="flex justify-center items-center mt-5">
     <button class="px-10 py-4 bg-[#ABC72C]">
       <span><i class="bi bi-arrow-up-short"></i></span> Back to top
     </button>
   </section>
 
-  <section class="">
+  <section>
     <div class="mt-10 bg-[#F2F2F2]">
       <h4 class="text-2xl font-bold text-center pt-5">
         GET THE LATEST NEWS & OFFERS IN BEAUTY & FASHION
       </h4>
-      <div class="flex justify-center items-center pt-5 pb-5">
-        <input class="px-7 py-3 outline-none w-[400px]" type="text" placeholder="Enter you email address" />
-        <button class="bg-gray-900 px-7 py-3 text-white">SUBSCRIBE</button>
+      <div class="flex flex-col md:flex-row justify-center items-center pt-5 pb-5">
+        <input class="w-5/6 lg:w-1/2 py-3 px-2 outline-none mx-auto" type="text"
+          placeholder="Enter you email address" />
+        <button class="bg-gray-900 px-7 py-3 text-white my-2 md:my-0 rounded">SUBSCRIBE</button>
       </div>
     </div>
   </section>
 
   <footer class="pt-10">
-    <div class="flex justify-center items-center">
+    <div class="flex flex-col md:flex-row justify-center items-center">
       <h4 class="font-bold px-7">WHO WE ARE</h4>
       <h4 class="font-bold px-7">FREQUENTLY ASKED QUESTIONS</h4>
       <h4 class="font-bold px-7">CONTACT US</h4>
